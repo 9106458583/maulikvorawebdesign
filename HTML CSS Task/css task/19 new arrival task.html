@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navigationbar
+        {
+            background: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .a
+        {
+            list-style-type: none;
+            height: 40px;
+            width: 200px;
+            z-index: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .a:hover
+        {
+            background: lightcoral;
+        }
+
+        .b
+        {
+            display: flex;
+            
+        }
+
+        .menmain .box1
+        {
+             height: 390px;
+            width: 245px;
+            background:white;
+            position:relative; 
+            top: 100px;
+            left: 0;
+            margin-left: 40px;
+            box-shadow: 0px 0px 9px #000;
+        }
+        .menmain
+        {
+            justify-content: center;
+          
+           
+        }
+       
+
+        .photo
+        {
+            position: absolute;
+            left: 20px;
+            transition: 1s; 
+        }
+
+        .box1:hover .photo
+        {
+             transform:rotatey(350deg);
+         }
+
+        .text
+        {
+            position: absolute;
+            top: 30px;
+            text-decoration: none;
+        }
+
+        .navigationbar .menmain
+        {
+            display: none;
+            position: absolute;
+            top: 70%;
+            left: 0%;
+            width:100%;
+            height: 550px;
+        }
+
+        .a:hover .menmain
+        {
+            display:flex ;
+        }
+
+        .c
+        {
+            background: black;
+            height: 40px;
+            width: 100%;
+            color: white;
+            text-align: center;
+            line-height: 40px; 
+            position: absolute;
+            top: 0%;
+            opacity: 0;
+            transition: 1s;
+        }
+
+        .box1:hover .c
+        {
+            top: 45%;
+            opacity: 1;
+        }
+
+        .text1
+        {
+             position: absolute;
+            top: 80px;
+            text-align: center;
+        }
+
+        .menmain1
+        {
+            height:95px;
+            width: 100%;
+            position: absolute;
+            top: 200px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .addtocard
+        {
+            height: 30px;
+            width: 180px;
+            position: absolute;
+            top: 135px;
+            background: aqua;
+            color:black; 
+            outline: 2px solid aqua ;
+            text-align: center;
+            line-height: 30px;
+            transition: 1s;
+        }
+
+        .addtocard:hover
+        {
+            outline: 5px solid aqua;
+            outline-offset: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navigationbar">
+            <ul class="b">
+                <li class="a">MEN`s
+<!-- -------------------- 1box ------------------------------------= -->
+                <div class="menmain">
+                    <div class="box1">
+                        <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m1.jpg" alt="" height="200px" width="200px"></div>
+                        <div class="c">QUICK VIEW</div>
+                        <div class="menmain1">
+                        <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Formal Blue Shirt</a> 
+                        </div>
+                        <div class="text1">
+                            $45.99 <strike style="color: lightslategray;margin-left:15px;">$69.17</strike>
+                        </div>
+                        <div class="addtocard">ADD TO CART</div>
+                    </div>
+                    </div>
+                
+<!-- ----------------------------------end---------------------------------------= -->
+
+<!-- -------------------- 2box ------------------------------------= -->
+
+
+    <div class="box1">
+        <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m2.jpg" height="200px" width="200px"></div>
+        <div class="c">QUICK VIEW</div>
+        <div class="menmain1">
+        <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Gabi Full Sleeve Sweatshirt</a> 
+        </div>
+        <div class="text1">
+            $45.99 <strike style="color: lightslategray;margin-left:15px;">$69.17</strike>
+        </div>
+        <div class="addtocard">ADD TO CART</div>
+    </div>
+    </div>
+
+
+<!-- ----------------------------------end---------------------------------------= -->
+
+<!-- -------------------- 3box ------------------------------------= -->
+
+
+    <div class="box1">
+        <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m3.jpg" alt="" height="200px" width="200px"></div>
+        <div class="c">QUICK VIEW</div>
+        <div class="menmain1">
+        <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Dark Blue Track Pants</a> 
+        </div>
+        <div class="text1">
+            $85.99 <strike style="color: lightslategray;margin-left:15px;">$89.17</strike>
+        </div>
+        <div class="addtocard">ADD TO CART</div>
+    </div>
+    </div>
+
+
+<!-- ----------------------------------end---------------------------------------= -->
+
+<!-- -------------------- 4box ------------------------------------= -->
+
+
+    <div class="box1">
+        <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/m4.jpg" alt="" height="200px" width="200px"></div>
+        <div class="c">QUICK VIEW</div>
+        <div class="menmain1">
+        <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Round Neck Black T-Shirt</a> 
+        </div>
+        <div class="text1">
+            $145.99 <strike style="color: lightslategray;margin-left:15px;">$169.17</strike>
+        </div>
+        <div class="addtocard">ADD TO CART</div>
+    </div>
+    </div>
+</div>
+
+<!-- ----------------------------------end---------------------------------------= -->
+                </li>
+
+
+                <li class="a">WHOMEN`S
+
+                    <div class="menmain">
+                        <div class="box1">
+                            <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w1.jpg" alt="" height="200px" width="200px"></div>
+                            <div class="c">QUICK VIEW</div>
+                            <div class="menmain1">
+                            <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">A-line Black Skirt</a> 
+                            </div>
+                            <div class="text1">
+                                $145.99 <strike style="color: lightslategray;margin-left:15px;">$169.17</strike>
+                            </div>
+                            <div class="addtocard">ADD TO CART</div>
+                        </div>
+                        </div>
+                    
+    <!-- ----------------------------------end---------------------------------------= -->
+    
+    <!-- -------------------- 2box ------------------------------------= -->
+    
+    
+        <div class="box1">
+            <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w2.jpg" height="200px" width="200px"></div>
+            <div class="c">QUICK VIEW</div>
+            <div class="menmain1">
+            <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Sleeveless Solid Blue Top</a> 
+            </div>
+            <div class="text1">
+                $140.99 <strike style="color: lightslategray;margin-left:15px;">$189.17</strike>
+            </div>
+            <div class="addtocard">ADD TO CART</div>
+        </div>
+        </div>
+    
+    
+    <!-- ----------------------------------end---------------------------------------= -->
+    
+    <!-- -------------------- 3box ------------------------------------= -->
+    
+    
+        <div class="box1">
+            <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w3.jpg" alt="" height="200px" width="200px"></div>
+            <div class="c">QUICK VIEW</div>
+            <div class="menmain1">
+            <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Skinny Jeans</a> 
+            </div>
+            <div class="text1">
+                $150.99 <strike style="color: lightslategray;margin-left:15px;">$169.17</strike>
+            </div>
+            <div class="addtocard">ADD TO CART</div>
+        </div>
+        </div>
+    
+    
+    <!-- ----------------------------------end---------------------------------------= -->
+    
+    <!-- -------------------- 4box ------------------------------------= -->
+    
+    
+        <div class="box1">
+            <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/w4.jpg" alt="" height="200px" width="200px"></div>
+            <div class="c">QUICK VIEW</div>
+            <div class="menmain1">
+            <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Black Basic Shorts</a> 
+            </div>
+            <div class="text1">
+                $120.99 <strike style="color: lightslategray;margin-left:15px;">$200.17</strike>
+            </div>
+            <div class="addtocard">ADD TO CART</div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- ----------------------------------end---------------------------------------= -->
+                </li>
+
+                <li class="a">BAGS
+
+                    <div class="menmain">
+                        <div class="box1">
+                            <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b1.jpg" alt="" height="200px" width="200px"></div>
+                            <div class="c">QUICK VIEW</div>
+                            <div class="menmain1">
+                            <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Laptop Messenger Bag</a> 
+                            </div>
+                            <div class="text1">
+                                $245.99 <strike style="color: lightslategray;margin-left:15px;">$269.17</strike>
+                            </div>
+                            <div class="addtocard">ADD TO CART</div>
+                        </div>
+                        </div>
+                    
+    <!-- ----------------------------------end---------------------------------------= -->
+    
+    <!-- -------------------- 2box ------------------------------------= -->
+    
+    
+        <div class="box1">
+            <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b2.jpg" height="200px" width="200px"></div>
+            <div class="c">QUICK VIEW</div>
+            <div class="menmain1">
+            <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Puma Backpack</a> 
+            </div>
+            <div class="text1">
+                $445.99 <strike style="color: lightslategray;margin-left:15px;">$569.17</strike>
+            </div>
+            <div class="addtocard">ADD TO CART</div>
+        </div>
+        </div>
+    
+    
+    <!-- ----------------------------------end---------------------------------------= -->
+    
+    <!-- -------------------- 3box ------------------------------------= -->
+    
+    
+        <div class="box1">
+            <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b3.jpg" alt="" height="200px" width="200px"></div>
+            <div class="c">QUICK VIEW</div>
+            <div class="menmain1">
+            <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Laptop Backpack</a> 
+            </div>
+            <div class="text1">
+                $185.99 <strike style="color: lightslategray;margin-left:15px;">$289.17</strike>
+            </div>
+            <div class="addtocard">ADD TO CART</div>
+        </div>
+        </div>
+    
+    
+    <!-- ----------------------------------end---------------------------------------= -->
+    
+    <!-- -------------------- 4box ------------------------------------= -->
+    
+    
+        <div class="box1">
+            <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/b4.jpg" alt="" height="200px" width="200px"></div>
+            <div class="c">QUICK VIEW</div>
+            <div class="menmain1">
+            <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Travel Duffel Bag</a> 
+            </div>
+            <div class="text1">
+                $645.99 <strike style="color: lightslategray;margin-left:15px;">$769.17</strike>
+            </div>
+            <div class="addtocard">ADD TO CART</div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- ----------------------------------end---------------------------------------= -->
+                </li>
+
+                <li class="a">FOOTWEAR
+
+                    <div class="menmain">
+                        <div class="box1">
+                            <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s1.jpg" alt="" height="200px" width="200px"></div>
+                            <div class="c">QUICK VIEW</div>
+                            <div class="menmain1">
+                            <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Running Shoes</a> 
+                            </div>
+                            <div class="text1">
+                                $505.99 <strike style="color: lightslategray;margin-left:15px;">$609.17</strike>
+                            </div>
+                            <div class="addtocard">ADD TO CART</div>
+                        </div>
+                        </div>
+                    
+    <!-- ----------------------------------end---------------------------------------= -->
+    
+    <!-- -------------------- 2box ------------------------------------= -->
+    
+    
+        <div class="box1">
+            <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s2.jpg" height="200px" width="200px"></div>
+            <div class="c">QUICK VIEW</div>
+            <div class="menmain1">
+            <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Shoetopia Lace Up</a> 
+            </div>
+            <div class="text1">
+                $245.99 <strike style="color: lightslategray;margin-left:15px;">$469.17</strike>
+            </div>
+            <div class="addtocard">ADD TO CART</div>
+        </div>
+        </div>
+    
+    
+    <!-- ----------------------------------end---------------------------------------= -->
+    
+    <!-- -------------------- 3box ------------------------------------= -->
+    
+    
+        <div class="box1">
+            <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s3.jpg" alt="" height="200px" width="200px"></div>
+            <div class="c">QUICK VIEW</div>
+            <div class="menmain1">
+            <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Steemo Casuals(Black)</a> 
+            </div>
+            <div class="text1">
+                $805.99 <strike style="color: lightslategray;margin-left:15px;">$890.17</strike>
+            </div>
+            <div class="addtocard">ADD TO CART</div>
+        </div>
+        </div>
+    
+    
+    <!-- ----------------------------------end---------------------------------------= -->
+    
+    <!-- -------------------- 4box ------------------------------------= -->
+    
+    
+        <div class="box1">
+            <div class="photo"><img src="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/s6.jpg" alt="" height="200px" width="200px"></div>
+            <div class="c">QUICK VIEW</div>
+            <div class="menmain1">
+            <div class="text"> <a href="https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/single.html" style="color: red; text-decoration: none; font-size: 20px; text-align: center;">Aero Canvas Loafers</a> 
+            </div>
+            <div class="text1">
+                $145.99 <strike style="color: lightslategray;margin-left:15px;">$169.17</strike>
+            </div>
+            <div class="addtocard">ADD TO CART</div>
+        </div>
+        </div>
+    </div>
+    
+    <!-- ----------------------------------end---------------------------------------= -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

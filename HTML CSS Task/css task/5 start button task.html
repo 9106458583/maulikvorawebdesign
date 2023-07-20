@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 50px;
+            width: 150px;
+            background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+            /* border-radius: 1200px 1200px 1200px 1200px; */
+            margin:100px auto;
+            padding: auto;
+            position: relative;
+            box-sizing: border-box;
+            font-size: large;
+            padding-left: 44px;
+            padding-top: 14px;
+            overflow: hidden;
+        }
+        .b{
+            height: 50px;
+            width: 150px;
+            background: rgba(0,0,0,.1);
+            position: absolute;
+            top: 0%;
+            right: 100%;
+            transition: 0.5s;
+
+
+        }
+        .a:hover .b{
+            /* top:0%; */
+            right:0%;    
+           
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="a">
+        START
+        <div class="b">
+
+        </div>
+    </div>
+</body>
+</html>

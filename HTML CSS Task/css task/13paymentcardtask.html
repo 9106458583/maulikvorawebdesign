@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <style>
+        *{
+            margin: 0;
+            font-family: fantasy;
+        }
+       
+        .background
+        {
+            height: 730px;
+            width: 60%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(30deg,lightcoral,navy 60%,lightcoral);
+            overflow: hidden;
+           
+        }
+
+        .maincard
+        { height: 630px;
+            width: 800px;
+            background:linear-gradient(140deg,lightcoral,navy 30%);
+            border-radius: 30px;
+            position: relative;
+            overflow: hidden;        
+        }
+
+        ul
+        {
+            position: absolute;
+            top:40px;
+            left: 340px;
+        }
+
+        li
+        {
+           display: inline;
+           color: white;
+           margin-left: 40px;  
+        }
+
+        .fa
+        {  
+            color: white;
+            position: absolute;
+            top: 40px;
+            left: 40px;
+            height: 40px;
+            word-spacing: 10px;
+        }
+
+        .border
+        {
+            height: 150px;
+            width: 150px;
+            position: absolute;
+            top: 80px;
+            left: -80px;
+            border-radius: 50%;
+            background: linear-gradient(crimson ,navy);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .border::after
+        {  
+           content: "";
+            height: 110px;
+            width: 110px;
+            background:lightcoral ;
+            opacity: 0.4; 
+            position: absolute;
+            border-radius: 50%;   
+        }
+
+        .outlineborder
+        {
+            height: 540px;
+            width: 540px;
+            position: absolute;
+            top: 30%;
+            left: 65%;
+            /* top: 180px;
+            left: 510px; */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            border: 5px solid lightslategrey;
+            box-sizing: border-box;
+        }
+
+        .circle
+        {
+            height: 450px;
+            width: 450px;
+            position: absolute;
+            /* top: 220px;
+            left: 520px; */
+            border-radius: 50%;
+            background:linear-gradient(lightskyblue,crimson 95%);   
+            z-index: 1;
+        }
+
+        .circle1
+        {  
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            top: 160px;
+            left: 130px;
+            border-radius: 50%;
+            background: linear-gradient(navy 62%,lightcoral);
+            /* z-index: 1; */
+        }
+
+        .circle2
+        {
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            top: 181px;
+            left: 150px;
+            border-radius: 50%;
+            background: linear-gradient(lightskyblue,crimson) ;
+            /* z-index: 1; */
+        }
+
+       /* -------------CARD 1------------------------- */
+
+       .card
+       {
+            height: 205px;
+            width: 350px;
+            background: rgba(232, 226, 226, 0.347);
+            border-radius: 30px;
+            position: absolute;
+            top: -50px;
+            left: -135px;
+            transform: rotate(15deg); 
+            backdrop-filter: blur(10px);
+            /* z-index: 2; */
+            border: 0.1px solid lightcoral;
+       }
+
+       .card1
+       {
+            color: white;
+            font-size: 33px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 18px;
+            left: 245px;
+       }
+
+       .card2
+       {
+            color: white;
+            font-size: 24px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 100px;
+            left: 25px;
+       }
+
+       .card3
+       {
+            color: white;
+            font-size: 12px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 150px;
+            left: 25px;
+       }
+
+       .card4
+       {
+            color: white;
+            font-size: 17px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 170px;
+            left: 25px;
+       }
+
+       .card5
+       {
+            color: white;
+            font-size: 12px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 160px;
+            left: 270px;
+       }
+       
+       .card6
+       {
+            color: white;
+            font-size: 18px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 180px;
+            left: 270px;
+       }
+
+       img
+       {
+            height: 50px;
+            width: 60px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+       }
+    
+     /* --------------------CARD 2------------------------------- */
+
+        .cardback
+       {
+            height: 200px;
+            width: 315px;
+            background: rgba(232, 226, 226, 0.347);
+            border-radius: 30px;
+            position: absolute;
+            top: 130px;
+            left: -158px;
+            transform: rotate(-10deg);
+            backdrop-filter: blur(20px); 
+            border: 0.1px solid lightcoral; 
+       }
+
+       .card21
+       {
+            color: white;
+            font-size: 25px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 18px;
+            left: 255px;
+       }
+
+       .card22
+       {
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 100px;
+            left: 25px;
+       }
+
+       .card23
+       {
+            color: white;
+            font-size: 10px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 150px;
+            left: 25px;
+       }
+
+       .card24
+       {
+            color: white;
+            font-size: 14px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 170px;
+            left: 25px;
+       }
+
+       .card25
+       {
+            color: white;
+            font-size: 10px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 150px;
+            left: 250px;
+       }
+
+       .card26
+       {
+            color: white;
+            font-size: 14px;
+            font-family: sans-serif;
+            position: absolute;
+            top: 170px;
+            left: 255px;
+       }
+
+       img
+       {
+            height: 40px;
+            width: 50px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+       }
+       
+       .font
+       {  
+            height: 420px;
+            width: 300px;        
+            position: absolute;
+            top: 150px;
+            left: 100px;
+       }
+
+      .maulik
+      {
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            top: 250px;
+            left: 60px;
+            border-radius: 50%;
+            background: linear-gradient(navy,lightcoral);
+      }
+
+      .maulik1
+      {
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            top: 110px;
+            left: 560px;
+            border-radius: 50%;
+            background: linear-gradient(navy,lightcoral);
+       
+      }
+
+      .maulik2
+      {
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            top: 195px;
+            left: 380px;
+            border-radius: 50%;
+            background: linear-gradient(lightskyblue,lightcoral);
+      }
+
+      .maulik3
+      {
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            top: 430px;
+            left: 340px;
+            border-radius: 50%;
+            background: linear-gradient(navy,lightcoral);  
+      }
+
+      .maulik4
+      {
+            height: 35px;
+            width: 35px;
+            position: absolute;
+            top: 140px;
+            left: 530px;
+            border-radius: 50%;
+            background: linear-gradient(lightskyblue,lightcoral);  
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      }
+
+      .maulik4::after
+      {
+            content: "";
+            height: 15px;
+            width: 15px;
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(navy,lightcoral);  
+      }
+
+      .maulik5
+      {
+            height: 105px;
+            width: 105px;
+            position: absolute;
+            top: 60px;
+            left: 580px;
+            border-radius: 50%;
+            background: lightcoral;
+            filter: blur(50px);
+      }
+
+      .maulik6
+      {
+            height: 125px;
+            width: 125px;
+            position: absolute;
+            top: 490px;
+            left: 490px;
+            border-radius: 50%;
+            background:linear-gradient(lightcoral 80%,navy);
+            transform: rotate(230deg);
+            filter: blur(30px);
+      }
+      
+      .maulik7
+      {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: 500px;
+            left: 290px;
+            border-radius: 50%;
+            background: linear-gradient(navy,lightskyblue); 
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+        
+      }
+
+      .maulik7::after
+      { 
+            content: "";
+            height: 10px;
+            width: 10px;
+            position: absolute; 
+            border-radius: 50%;
+            background:navy;
+      }
+    </style>
+</head>
+<body>
+    <div class="background">
+       <div class="maincard">
+
+           <ul class="ul">
+              <li class="li">About</li>
+              <li class="li">Product</li>
+              <li class="li">Pricing</li>
+              <li class="li"><button style="height: 30px; width: 80px; background: none; color: white; border-radius: 30px;">Sign up</button></li>
+           </ul>
+               <i class="fa fa-globe" aria-hidden="true"> Cachfly</i>
+
+            <div class="border"></div>
+
+            <div class="outlineborder">
+                <div class="circle">
+                    <div class="cardback">
+                        <img src="chip.png" alt="">
+                        <div class="card21"> VISA </div>
+                        <div class="card22">1516 1623 5604 8212</div>
+                        <div class="card23">CARD HOLDER</div>
+                        <div class="card24">SARSH GOLD</div>
+                        <div class="card25">EXPRESS</div>
+                        <div class="card26">09/24</div>
+                    </div>
+                    
+
+                <div class="circle1"></div>
+                <div class="circle2"></div>
+
+                <div class="card">
+                    <img src="chip.png" alt="">
+                    <div class="card1"> VISA </div>
+                    <div class="card2">3516 8643 7614 9242</div>
+                    <div class="card3">CARD HOLDER</div>
+                    <div class="card4">MAULIK VORA</div>
+                    <div class="card5">EXPRESS</div>
+                    <div class="card6">11/22</div>
+                </div>
+                </div>
+             </div>
+           
+              <div class="font">
+                    <span style="color: green; font-size: 15px;"> Start Saving Your Money</span><br>
+
+                    <h1 style="font-size: 50px; color: white;">Payments Have Never Been Easier</h1><br>
+
+                    <span style="color: white; font-size: 12px;"> Discover The Easiest Way to Manage Your Personal Finances,Save,Analyse,Invest,Withdraw,Send and Receive Money All Over The World With No Limites! </span><br><br><br>
+
+                    <span>
+                      <button style="height: 35px; width: 100px; background:blue; color: white; border-radius: 30px;">Get Started</button>
+
+                     <a href="https://www.tops-int.com/it-training-ahmedabad" style="color: white;text-decoration: none; margin: 20px;">Dowanload App</a>
+                    </span><br><br><br><br>
+
+                    <span style="color: white; font-size: 14px;">Learn More About Digital Banking <a href="https://www.tops-int.com/it-training-ahmedabad" style="color: red;"> Here</a>
+                    </span>
+               </div>
+
+                    <div class="maulik"></div>
+                    <div class="maulik1"></div>
+                    <div class="maulik2"></div>
+                    <div class="maulik3"></div>
+                    <div class="maulik4"></div>
+                    <div class="maulik5"></div>
+                    <div class="maulik6"></div>
+                    <div class="maulik7"></div>
+          </div>
+      </div>
+</body>
+</html>

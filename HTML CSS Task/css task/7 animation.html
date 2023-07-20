@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{  box-sizing: border-box; border-radius: 50%;}
+        .a{
+            height: 300px;
+            width: 300px;
+            background: transparent;
+            margin: 150px auto;
+            border: 10px solid transparent;
+            border-top: 10px solid red;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           animation: maulik 4s linear infinite reverse  ;
+           /* background: lightblue; */
+           
+        }
+        .b{
+            height: 250px;
+            width: 250px;
+            background:transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid aqua;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           animation: maulik 2s linear infinite   ;
+          
+        }
+       
+        .c{
+            height: 200px;
+            width: 200px;
+            background: transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid firebrick;
+            display: flex;
+           justify-content: center;
+           align-items: center;
+           animation: maulik 1s linear infinite  forwards  reverse;
+         }
+         .d{
+            height: 150px;
+            width: 150px;
+            background:transparent;
+            border: 10px solid transparent;
+            border-top: 10px solid gold;
+            animation: maulik 0.8s linear forwards infinite ;
+         }
+         @keyframes maulik
+         {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+         }
+       
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">
+            <div class="c">
+                <div class="d"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

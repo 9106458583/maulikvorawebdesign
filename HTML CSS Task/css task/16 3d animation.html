@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            height: 150px;
+            width: 150px;
+            position: relative;
+             background: black;
+             transition: 4s;
+             backface-visibility: hidden;
+             transform-style: preserve-3d;
+             margin: 100px auto;
+             animation: maulik 2s infinite linear;
+        }
+        .front
+        {
+            height: 150px;
+            width: 150px;
+            position: absolute;
+             background:red;
+             top: 0;
+             left: 0;
+             transform: rotateX(0deg) translateZ(75px);;
+             backface-visibility: hidden;
+        } 
+        .back
+        {
+            height: 150px;
+            width: 150px;
+            position: absolute;
+             background: blue;
+             top: 0;
+             left: 0;
+             transform: rotateX(90deg) translateZ(75px);
+             backface-visibility: hidden;
+
+        }
+
+        .left
+        {
+            height: 150px;
+            width: 150px;
+            position: absolute;
+             background:yellow;
+             top: 0;
+             left: 0;
+             transform: rotateX(180deg) translateZ(75px);;
+             backface-visibility: hidden;
+        } 
+        .right
+        {
+            height: 150px;
+            width: 150px;
+            position: absolute;
+             background: green;
+             top: 0;
+             left: 0;
+             transform: rotateX(270deg) translateZ(75px);
+             backface-visibility: hidden;
+
+        }
+    .main:hover
+    {
+        transform: rotateX(360deg) translateZ(0px);
+    }
+@keyframes maulik
+{
+    from{transform: rotateX(0deg);}
+    to{transform: rotateX(360deg);}
+}
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="front"></div>
+        <div class="back"></div>
+        <div class="left"></div>
+        <div class="right"></div>
+
+    </div>
+</body>
+</html>

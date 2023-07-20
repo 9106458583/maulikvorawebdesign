@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 400px;
+            width: 800px;
+            background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_2.jpg);
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+        }
+        .b{
+            height: 400px;
+            width: 800px;
+            background:rgba(0,0,0,0.2);
+            position: absolute;
+            right:100%;
+            top: 100%;
+            transition: 1s;
+            
+           
+           
+        }
+        .a:hover .b{
+           right: 0%;
+           top:0%;
+        }
+        .c{
+            height: 400px;
+            width: 800px;
+            background:rgba(0,0,0,0.2);
+            transform: translate(0px 100px);
+           position: absolute;
+           transition: 1s;
+           left: 100%;
+           bottom: 100%;
+          
+        }
+        .a:hover .c{
+           left: 0%;
+           bottom: 0%;
+        }
+        .d
+        {
+            height: 400px;
+            width: 800px;
+            background: url(https://p.w3layouts.com/demos_new/template_demo/20-06-2017/elite_shoppy-demo_Free/1660570665/web/images/bot_1.jpg);
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            /* border: 2px solid black; */
+            position: relative;
+            background-size: cover;
+            overflow: hidden;
+            left: 800px;
+            bottom: 400px;
+           
+        }
+        .e{
+            height: 400px;
+            width: 800px;
+            background:rgba(0,0,0,0.1);
+            position: absolute;
+            top: 100%;
+            right: 100%;
+            transition: 1s;
+            box-sizing: border-box;
+           display: inline;
+           
+        }
+        .d:hover .e
+        {
+            top: 0%;
+            right: 0%;
+        }
+        .f{
+            height: 400px;
+            width: 800px;
+            background:rgba(0,0,0,0.1);
+            position: absolute;
+            left: 100%;
+            bottom: 100%;
+            transition: 1s;
+            box-sizing: border-box;
+            display: inline;
+        }
+        .d:hover .f{
+            left: 0%;
+            bottom: 0%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b"></div>
+        <div class="c"></div>
+    
+    </div>
+    <div class="d" >
+        <div class="e"></div>
+        <div class="f"></div>
+       
+    </div>
+    
+</body>
+</html>

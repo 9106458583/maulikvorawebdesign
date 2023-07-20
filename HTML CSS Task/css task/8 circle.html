@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 200px;
+            width: 200px;
+            background: black;
+            margin: 200px auto;
+            display: flex;
+           align-items: center;
+           position: relative;
+           justify-content: center;
+            border-radius: 50%;
+            transform: scale(1);
+             animation: maulik 3s infinite linear; 
+           
+           
+            
+        }
+      
+        .a::after{content: "";
+            height: 300px;
+            width: 300px;
+            background:rgba(0,0,0,0.5);
+           display: flex;
+           align-items: center;
+           position: absolute;
+           justify-content: center;
+            border-radius: 50%;
+            /* transition: 2s;  */
+            opacity: 0; 
+            transform: scale(0);
+             animation: maulik1 3s infinite linear ; 
+            
+        }
+        /* .a:hover::after
+        {
+            transform: scale(1);
+            opacity: 0.3;
+        } */
+        .a::before{content: "";
+            height: 400px;
+            width: 400px;
+            background:rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: absolute;
+            transform: scale(0);
+            opacity: 0;
+            /* transition: 3s;  */
+             animation: maulik2 3s infinite linear ; 
+        
+        } 
+         /* .a:hover::before
+        {
+            transform: scale(1);
+            opacity: 0.6;
+        }  */
+       @keyframes maulik
+       {
+        form{transform: scale(1);}
+        to{transform: scale(1.1);}
+       }
+       @keyframes maulik1
+       {
+        0%{opacity: 0;transform: scale(.8);}
+        25%{opacity: 2;transform: scale(1);}
+        50%{opacity: 3;transform: scale(1.1);}
+        75%{opacity: 2;transform: scale(1.2);}
+        100%{opacity: 0;transform: scale(1.3);}
+       }
+       @keyframes maulik2
+       {
+        0%{opacity: 0;transform: scale(.8);}
+        25%{opacity: 2;transform: scale(1);}
+        50%{opacity: 3;transform: scale(1.1);}
+        75%{opacity: 2;transform: scale(1.2);}
+        100%{opacity: 0;transform: scale(1.3);}
+       }
+ 
+	
+    </style>
+</head>
+<body>
+    <div class="a">
+        
+    </div>
+   
+</body>
+</html>

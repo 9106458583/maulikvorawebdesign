@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {   height: 500px;
+            width: 500px;
+            background:coral;
+            border-radius: 50%;
+            margin: 100px auto;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             position: relative;
+             
+        }
+
+        .nain{
+            height: 10px;
+            width: 140px;
+            background: black;
+            border-radius: 10px;
+            position: absolute;
+            top: 150px;
+            left: 90px;
+            transform: rotate(200deg);
+            animation: vora 1s linear infinite;
+        }
+        .nain1{
+            height: 10px;
+            width: 140px;
+            background: black;
+            border-radius: 10px;
+            position: absolute;
+            top: 150px;
+            right: 90px;
+            transform: rotate(-20deg);
+            animation: vora 1s linear infinite;
+          }
+        .b
+        {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid black;
+            background: white;
+            position: absolute;
+            margin-left: 200px;
+            /* animation: maulik 1s infinite alternate-reverse linear; */
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+        }
+        .papan
+        {   
+            
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background:lightcoral;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* margin-top: -100px; */
+            overflow: hidden;
+            animation: h 2s linear infinite;
+            z-index: 1;
+        }
+ 
+        .c
+        {
+            height: 50px;
+            width: 50px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            animation: maulik 3s linear infinite;
+        }
+        .d
+        {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 2px solid black;
+            position: absolute;
+            /* margin-top: 500px; */
+            margin-right: 200px;
+            /* animation: maulik 1s infinite alternate-reverse linear; */
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            background: white;
+
+        
+        }
+
+        .papan1
+        {   
+            
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            background:lightcoral;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* margin-top: -100px; */
+            overflow: hidden;
+            animation: h 2s linear infinite;
+            z-index: 1;
+        }
+        .e
+        {
+            height: 50px;
+            width: 50px;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            animation: maulik 3s linear infinite;
+        }
+
+        @keyframes h
+        {
+            0%{
+                top:0%
+            }
+            50%{
+                top:-90%
+            }
+            100%{
+                top:0%
+            } 
+        }
+
+        @keyframes vora
+        {
+            0%{
+                top:150px
+            }
+            50%{
+                top:170px
+            }
+            100%{
+                top:150px
+            }
+        
+        }
+
+        @keyframes maulik
+        {
+        0%
+        {left:50%;}
+        25%
+        {left:25%;}
+        50%
+        {left:0%;}
+        75%
+        {left:25%;}
+        100%
+        {left:50%}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nain"></div>
+        <div class="nain1"></div>
+
+        <div class="b"> <div class="papan"></div>
+        <div class="c"></div>
+        </div>
+        <div class="d"><div class="papan1"></div>
+        <div class="e"></div>
+        </div>
+       
+    </div>
+</body>
+</html>

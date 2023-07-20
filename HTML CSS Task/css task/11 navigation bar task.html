@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+     }
+        .a{
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+           
+        }
+        .b{
+            
+            list-style: none;    
+            padding: 20px 0;
+            display: inline;
+            margin-right: 20px;
+            position: relative;
+
+        }
+        .c{
+            list-style: none;
+
+            background:black;
+            position: absolute;
+            top:100%;
+            left:0;
+            width: 100px;
+            list-style-type: none;
+            display: none;
+        }
+        .b:hover .c
+            {
+                display: block;
+            }
+            .d{
+                width: 80px;
+                background:black;
+                position: absolute;
+                display: none;
+                top:50%;
+                left:100px;
+                list-style-type: none;
+                
+            }
+            .vora:hover .d{
+                display: block;
+            }
+    </style>
+</head>
+<body>
+    <div class="a">
+    <ul>
+        <li class="b">Home</li>
+        <li class="b">About</li>
+
+        <li class="b">Men`s Wear
+            <ul class="c">
+                <li>Wallets</li>
+                <li>Watch</li>
+                <li class="vora">Bags
+                    <ul class="d">
+                        <li>home</li>
+                        <li> about</li>
+                        <li> contact</li>
+                        <li>uri</li>
+                    </ul>
+                </li>
+                <li>Shirts</li>
+                <li>Clothing</li>
+            </ul>
+        </li>
+
+        <li class="b">Women`s Wear
+            <ul class="c">
+                <li>Beauty</li>
+                <li>Footwear</li>
+                <li class="vora">Shirts
+                    <ul class="d">
+                        <li>home</li>
+                        <li> about</li>
+                        <li> contact</li>
+                        <li>uri</li>
+                    </ul>
+                </li>
+                <li>Watch</li>
+                <li>Wallets</li>
+            </ul>
+        </li>
+        
+        <li class="b">Short Codes</li>
+        <li class="b">Contact</li>
+        
+    </ul>
+</div>
+</body>
+</html>
