@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .lo
+        {
+            height: 670px;
+            background: lightgrey;
+        }
+        .nav
+        {
+     
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            padding: 50px;
+        }
+        .img1,.img2
+        {
+            height: 500px;
+            width: 40%;
+            background: url(img1.jpg);
+            background-size: 113px 125px;
+            transform: translate(-100px,100px) rotate(-360deg) scale(2);
+            border-radius: 50%;
+            transition: 1s;
+            opacity: 0;
+      
+        }
+        .img:hover
+        {
+            background-size: 100% 100%;            
+        }
+        .img2
+        {
+            background: url(385983.jpg);
+            background-size: 113px 125px;
+            transform: translate(100px,100px) rotate(360deg) scale(2);
+        }
+    </style>
+</head>
+<body onscroll="vora()">
+
+    <div class="lo"></div>
+    <div class="nav">
+        <div class="img1 img" id="i1"></div>
+        <div class="img2 img" id="i2"></div>
+    </div>
+    <div class="lo"></div>  
+    
+    <script>
+
+        i1 = document.getElementById("i1")
+        i2 = document.getElementById("i2")
+
+        function vora()
+        {
+            if( document.documentElement.scrollTop > 50 )
+            {
+                i1.style.transform="translate(0px,0px) rotate(0deg) scale(1)"
+                i2.style.transform="translate(0px,0px) rotate(0deg) scale(1)"
+                i1.style.opacity="1"
+                i2.style.opacity="1"
+                i1.style.borderRadius = "0%"
+                i2.style.borderRadius = "0%"
+            }
+            else
+            {
+               
+                i1.style.transform="translate(-100px,100px) rotate(-360deg) scale(2)"
+                i2.style.transform="translate(100px,100px) rotate(360deg) scale(2)"
+                i1.style.opacity="0"
+                i2.style.opacity="0"
+                i1.style.borderRadius = "50%"
+                i2.style.borderRadius = "50%"
+            }
+        }
+    </script>
+
+</body>
+</html>

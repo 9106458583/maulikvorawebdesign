@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  
+
+    <img src="" alt="" height="100px";
+    width="100px"; id="mm">
+
+    <img src="img1.jpg" alt="" height="100px";
+    width="100px"; id="mv">
+
+    <img src="img1.jpg" alt="" height="100px";
+    width="100px"; id="mh">
+
+    <button onclick="t()">add</button>
+    <button onclick="t1()">remove</button>
+    <button onclick="t2()">remove</button>
+ 
+    <script>
+     v = document.getElementById('mm');
+
+     v1 = document.getElementById('mv');
+
+     v2 = document.getElementById('mh');
+
+        function t()
+        {
+            v.src="/385983.jpg";
+        }
+
+        function t1()
+        {
+            v1.src="/385983.jpg";
+        }
+
+        function t2()
+        {
+            if(v2.src.match("img1.jpg"))
+            {
+                v2.src="385983.jpg";
+            }
+            else
+            {
+                v2.src="img1.jpg";
+            }
+        }
+    </script>
+</body>
+</html>

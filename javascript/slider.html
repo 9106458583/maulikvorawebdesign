@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+        }
+
+        #maulik1 {
+            position: absolute;
+            top: 350px;
+            right: 100px;
+            background: transparent;
+            color: black;
+            border: none;
+            padding: 50px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div> <img src="/385983.jpg" alt="" height="700px" width="100%" id="maulik"></div>
+    <button id="maulik1" onclick="mmaa()">></button>
+
+    <script>
+        dd = document.getElementById('maulik')
+        function mmaa() {
+            if (dd.src.match("385983.jpg")) {
+                dd.src = "img1.jpg";
+            }
+            else {
+                dd.src = "385983.jpg"
+            }
+            setTimeout("mmaa()",1000)
+        }
+        mmaa()
+
+    </script>
+</body>
+
+</html>

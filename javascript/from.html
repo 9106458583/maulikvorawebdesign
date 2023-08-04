@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return ValidateForm()">
+
+        Name: <input type="text" name="" id="nm" onblur="return ValidateForm()">
+        <b id="nmErr"></b>
+    <br><br>
+        Mobile: <input type="text" name="" id="mb" onblur="return ValidateForm()">
+        <b id="nmErr1"></b>
+        <br>
+        <br>
+        <input type="submit" value="Validate" onclick="return ValidateForm()">
+       </form>
+
+        <script>
+    
+            name1 = document.getElementById('nm');
+            nmErr = document.getElementById('nmErr');
+            mobile = document.getElementById('mb');
+            nmErr1 = document.getElementById('nmErr1');
+            console.log(name1);
+            console.log(name1.value);
+
+            nm_ex = /^[a-zA-Z]{2,4}$/;
+    
+            function ValidateForm()
+            {
+                
+                if( name1.value==  "")
+                {
+                   nmErr.innerHTML =" *Required..!"; 
+                   nmErr.style.color ="red";
+                   name1.style.border="2px solid red";
+                   return false;
+    
+                }
+                else if(!nm_ex.test(name1.value))
+                {
+                    nmErr.innerHTML =" *min 2 and max 4 Letters only..!"; 
+                    return false;
+                  
+                }
+    
+                else 
+                {
+                    nmErr.innerHTML="";
+                    name1.style.border="2px solid green";
+                    return false;
+                }
+    
+                if( mobile.value==  "")
+                {
+                    nmErr1.innerHTML =" *Required..!"; 
+                   nmErr1.style.color ="red";
+                   mobile.style.border="2px solid red";
+                   return false;
+                }
+                else if(!nm_ex.test(mobile.value))
+                {
+                    nmErr1.innerHTML =" *min 10 Letters only..!"; 
+                    return false;
+                  
+                }
+                else 
+                {
+                    nmErr1.innerHTML="";
+                    mobile.style.border="2px solid green";
+                    return false;
+                }
+
+            }   
+               
+        </script>
+</body>
+</html>

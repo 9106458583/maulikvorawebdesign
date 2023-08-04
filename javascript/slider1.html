@@ -1,0 +1,141 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .xyz 
+        {
+             animation: scaleMe 1.5s; 
+            transform: translate(100%,0%);
+           
+        } 
+         @keyframes scaleMe 
+        {
+            100%{transform: scale(1);}
+        }
+
+        div 
+        {
+            overflow: hidden;
+            display: flex;
+            position: relative;
+            margin: auto;
+          
+        }
+    </style>
+</head>
+<body>
+ <div>
+    <img src="img1.jpg" alt="" height="300px" width="100%" />
+    <img src="385983.jpg" alt="" height="300px" width="100%" />
+    <img src="img1.jpg" alt="" height="300px" width="100%" />
+    <img src="385983.jpg" alt="" height="300px" width="100%" />
+    <img src="img1.jpg" alt="" height="300px" width="100%" />
+    <img src="385983.jpg" alt="" height="300px" width="100%" />
+    <img src="img1.jpg" alt="" height="300px" width="100%" />
+ </div>  
+ <script>
+    index=0;
+      function slider() {
+      
+      images = document.getElementsByTagName("img");
+      
+
+      for(m = 0;m < images.length; m++)
+      {
+        // images[m].style.display = "none";
+      }
+     images[index].style.display = "block";
+    images[index].classList.add('xyz')
+         index++;//4
+    
+      if(index>=images.length)
+        {
+            index=0;
+        }
+
+        setTimeout("slider()",1000)
+      }
+
+    slider()
+ </script> 
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .xyz 
+        {
+            animation: scaleMe 1.5s;
+            transform: translate(100%,0%);
+           
+        }
+
+        @keyframes scaleMe 
+        {
+            100%{transform: scale(1);}
+        }
+
+        div 
+        {
+            overflow: hidden;
+            border: 1px solid black;
+            background: black;
+          
+        }
+    </style>
+  </head>
+  <body>
+   
+    <div>
+        <img src="img1.jpg" alt="" height="300px" width="100%" />
+        <img src="385983.jpg" alt="" height="300px" width="100%" />
+        <img src="img1.jpg" alt="" height="300px" width="100%" />
+        <img src="385983.jpg" alt="" height="300px" width="100%" />
+        <img src="img1.jpg" alt="" height="300px" width="100%" />
+        <img src="385983.jpg" alt="" height="300px" width="100%" />
+        <img src="img1.jpg" alt="" height="300px" width="100%" />
+    </div>
+    
+
+   
+    <script>
+
+index = 0;
+      function slider() {
+      
+        images = document.getElementsByTagName("img");
+       
+
+        for (k = 0; k < images.length; k++) {
+    
+          images[k].style.display = "none";
+        }
+
+        images[index].style.display = "block";
+  
+        images[index].classList.add('xyz')
+        index++;//4
+
+        if(index>=images.length)
+        {
+            index=0;
+        }
+
+        setTimeout("slider()",1000);
+      }
+
+      slider()
+    </script>
+  </body>
+</html>  

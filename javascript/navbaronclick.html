@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #x{
+        display: none;
+    }
+</style>
+<body>
+    
+    <ul>
+        <li id="z" onclick="s()">abc
+            <ul id="x">
+                <li id="mm">a</li>
+                <li id="mm">b</li>
+                <li id="mm">c</li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+         a = document.getElementById('x');
+function s()
+{
+    if(a.style.display=="block")
+    {
+        a.style.display="none"
+    }
+    else
+    {
+        a.style.display="block"
+        a.style.background="black"
+        a.style.color="white"
+        a.style.width="100%"
+        a.style.listStyle="none"
+    }
+}
+
+
+
+    </script>
+</body>
+</html>

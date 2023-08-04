@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo quia molestias eum quibusdam! Ex quis ab expedita, quo ut, magnam aliquid natus temporibus repellendus doloribus quod aperiam consequuntur suscipit numquam?</p>
+    <button onclick="t()">add</button>
+    <button onclick="t1()">remove</button>
+    <button onclick="t2()">addremove</button>
+
+    <script>
+        para.style.color="red";
+        maulik = document.getElementById('para')
+        maulik1 = document.getElementById('para')
+        maulik2 = document.getElementById('para')
+        function t()
+        {
+            maulik.style.color="";
+        }
+        function t1()
+        {
+            maulik1.style.color="red";
+        }
+        function t2()
+        {
+            if(maulik2.style.color=="green")
+            {
+                maulik2.style.color="blue";
+            }
+            else if(maulik2.style.color=="blue")
+            {
+                maulik2.style.color="hotpink"
+            }
+            else if(maulik2.style.color=="hotpink")
+            {
+                maulik2.style.color="orange"
+            }
+            else if(maulik2.style.color=="orange")
+            {
+                maulik2.style.color="lightgreen"
+            }
+            else if(maulik2.style.color=="lightgreen")
+            {
+                maulik2.style.color="#c40c0c"
+            }
+            else
+            {
+                maulik2.style.color="green";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+</head>
+<style>
+    *{margin: 0;}
+    ul
+    {
+       
+        padding: 20px;
+        background: lightgreen;
+    }
+    div{
+        position: relative;
+    }
+    li
+    {
+        list-style-type: none;
+        display: inline;   
+    }
+    .fa-bars
+    {
+        color: black;
+        /* background: black; */
+        margin-top: -35px;
+        margin-left: 400px;
+        position: absolute;
+      
+    }
+  
+    @media(max-width="500px")
+    {
+        .fa-bars{display: inline-block;}
+    }
+</style>
+<body><div>
+<ul id="ll">
+    <li>home</li>
+    <li>about</li>
+    <li>contact</li>
+    <li>user</li>
+    <li>mail</li>
+    <li>abc</li>
+    <li>def</li>
+</ul>
+<span id="ii"><i class="fa fa-bars" aria-hidden="true"></i></span>
+</div>
+<script>
+ul = document.getElementById("ll");
+span = document.getElementById("ii");
+
+function get()
+{
+
+}
+</script>
+</body>
+</html>

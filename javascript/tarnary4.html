@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        a = 120;
+        b = 130;
+        c = 140;
+        d = 150;
+        //           m     ms         subs    sub    subs                           ms    sub
+        //   max = (x>y)? (x>z)? (x>a)? x:a :   (z>a)? z:a           :           (y>z)?  (y>a)? y:a: (z>a)? z:a;
+
+        // max = (x>y)? (x>z)? (x>a)? x:a :   (z>a)? z:a           :           (y>z)?  (y>a)? y:a: (z>a)? z:a;
+
+        max = (a>b)? (a>c)? (a>d)? a:d:(c>d)? c:d:(b>c)?(b>d)? b:d: (c>d)? c:d;
+        // if (x > y) {
+        //     if (x > z) {
+        //         if (x > a) {
+        //             document.write(x);
+        //         }
+        //         else {
+        //             document.write(a);
+        //         }
+        //     }
+        //     else {
+        //         if (z > a) {
+        //             document.write(z);
+        //         }
+        //         else {
+        //             document.write(a);
+        //         }
+        //     }
+        // }
+        // else {
+        //     if (y > z) {
+        //         if (y > a) {
+        //             document.write(y);
+        //         }
+        //         else {
+        //             document.write(a);
+        //         }
+        //     }
+        //     else {
+        //         if (z > a) {
+        //             document.write(z);
+        //         }
+        //         else
+        //         {
+        //             document.write(a);
+        //         }
+
+        //     }
+        // }
+        document.write(max);
+    </script>
+
+</body>
+
+</html>

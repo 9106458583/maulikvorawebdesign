@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="h">hello1</h1>
+    <h1 id="h">hello2</h1>
+    <h1 id="h">hello3</h1>
+    <h1 id="h">hello4</h1>
+    <h1 id="h">hello5</h1>
+    <h1 id="h">hello6</h1>
+    <h1 id="h">hello7</h1>
+    <h1 id="h">hello8</h1>
+    <h1 id="h">hello9</h1> 
+
+
+    <script>
+h1_tags = document.getElementById('h');
+for(i=0;i<h1_tags.length;i++)// 
+    {
+        if(i%2 == 0)
+        {
+
+              h1_tags[i].style.color = "red";
+        }
+
+        else 
+        {
+            h1_tags[i].style.color = "green";
+        }
+    }
+
+    </script>
+</body>
+</html>
