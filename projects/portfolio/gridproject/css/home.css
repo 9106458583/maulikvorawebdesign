@@ -467,7 +467,7 @@ a {
 
 /* layout 1 start */
 .layout1 {
-    background: url(/image/img22.jpg);
+    background: url(../image/img22.jpg);
     height: 1100px;
     background-repeat: no-repeat;
     position: relative;
@@ -900,14 +900,14 @@ a {
 /* <!-- layout4 start  --> */
 .layout4 {
     height: 600px;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(/image/img12.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(../image/img12.jpg);
     background-attachment: fixed;
     position: relative;
 }
 
 .layout41 {
     height: 600px;
-    background: url(/image/img27.png);
+    background: url(../image/img27.png);
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -1062,7 +1062,7 @@ a {
     width: 150px;
     color: white;
     position: relative;
-    background: linear-gradient(rgba(73, 102, 253), rgba(73, 100, 100, 0)), url(/image/img16\ 1copy.jpg);
+    background: linear-gradient(rgba(73, 102, 253), rgba(73, 100, 100, 0)), url(../image/img16\ 1copy.jpg);
     border-radius: 50%;
     margin-top: 130px;
     margin-left: 220px;
@@ -1107,7 +1107,7 @@ a {
     width: 200px;
     position: relative;
     color: white;
-    background: linear-gradient(rgba(73, 102, 253), rgba(73, 100, 100, 0)), url(/image/img17\ 1copy.jpg);
+    background: linear-gradient(rgba(73, 102, 253), rgba(73, 100, 100, 0)), url(../image/img17\ 1copy.jpg);
     border-radius: 50%;
     margin-top: -150px;
     margin-left: 385px;
@@ -1152,7 +1152,7 @@ a {
     height: 200px;
     width: 200px;
     position: relative;
-    background: linear-gradient(rgba(73, 102, 253), rgba(73, 100, 100, 0)), url(/image/img19\ 1copy.jpg);
+    background: linear-gradient(rgba(73, 102, 253), rgba(73, 100, 100, 0)), url(../image/img19\ 1copy.jpg);
     color: white;
     border-radius: 50%;
     margin-top: -35px;
@@ -1197,7 +1197,7 @@ a {
     height: 150px;
     width: 150px;
     position: relative;
-    background: linear-gradient(rgba(73, 102, 253), rgba(73, 100, 100, 0)), url(/image/img18\ 1copy.jpg);
+    background: linear-gradient(rgba(73, 102, 253), rgba(73, 100, 100, 0)), url(../image/img18\ 1copy.jpg);
     border-radius: 50%;
     margin-top: -150px;
     margin-left: 395px;
@@ -1456,7 +1456,7 @@ a {
 
 /* section 7 start  */
 .section6 {
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/image/img13.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../image/img13.jpg);
     height: 550px;
     background-size: cover;
     background-attachment: fixed;
