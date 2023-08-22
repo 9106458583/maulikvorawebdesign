@@ -1703,6 +1703,7 @@ body{
 .sect7div3 {
     height: 550px;
     width: 511px;
+    margin-left: -100px;
     display: flex;
     justify-content: center;
     align-items: center;
