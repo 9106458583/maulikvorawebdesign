@@ -247,6 +247,28 @@
 }
 
 .per2::after{
+    content: "85%";
+    font-size: 13px;
+    padding: 2px;
+    border-radius: 5px;
+    color: white;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+}
+.per2::before{
+    content: "";
+    width: 85%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: gold;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.per3::after{
     content: "80%";
     font-size: 13px;
     padding: 2px;
@@ -258,7 +280,7 @@
     left: 80%;
     transform: translate(-50%,-50%);
 }
-.per2::before{
+.per3::before{
     content: "";
     width: 80%;
     height: 100%;
@@ -268,30 +290,8 @@
     left: 0;
     top: 0;
 }
-.per3::after{
-    content: "10%";
-    font-size: 13px;
-    padding: 2px;
-    border-radius: 5px;
-    color: white;
-    background: black;
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(-50%,-50%);
-}
-.per3::before{
-    content: "";
-    width: 10%;
-    height: 100%;
-    border-radius: 40px;
-    background-color: gold;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
 .per4::after{
-    content: "0%";
+    content: "80%";
     font-size: 13px;
     padding: 2px;
     border-radius: 5px;
@@ -299,12 +299,12 @@
     background: black;
     position: absolute;
     top: 50%;
-    left: 2%;
+    left: 80%;
     transform: translate(-50%,-50%);
 }
 .per4::before{
     content: "";
-    width: 0%;
+    width: 80%;
     height: 100%;
     border-radius: 40px;
     background-color: gold;
@@ -313,7 +313,7 @@
     top: 0;
 }
 .per5::after{
-    content: "0%";
+    content: "75%";
     font-size: 13px;
     padding: 2px;
     border-radius: 5px;
@@ -321,12 +321,12 @@
     background: black;
     position: absolute;
     top: 50%;
-    left: 2%;
+    left: 75%;
     transform: translate(-50%,-50%);
 }
 .per5::before{
     content: "";
-    width: 0%;
+    width: 75%;
     height: 100%;
     border-radius: 40px;
     background-color: gold;
