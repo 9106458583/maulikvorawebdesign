@@ -45,7 +45,13 @@
         grid-template-columns: 1fr;
     }
     .project-cnt{
-        row-gap: 30px;
+        row-gap: 20px;
+    }
+    .project3, .project4,.project5{
+       margin-top: 5px;
+    }
+    .project5{
+        margin-left: 0px;
     }
     .cntct-cnt{
         grid-template-columns: 1fr;

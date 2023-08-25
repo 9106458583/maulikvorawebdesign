@@ -392,6 +392,84 @@
     opacity: 1;
     transform: scale(1);
 } 
+.project3{
+    background: url(./image/Bootstrapproject\ 3.png);
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project3 h2{
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 150px 0%;
+    background: rgba(23, 155, 215,0.5);
+    display: inline-block;
+    color: white;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.project3:hover h2{
+    opacity: 1;
+    transform: scale(1);
+} 
+
+.project4{
+    background: url(./image/Figma\ project\ 5.png);
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project4 h2{
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 150px 0%;
+    background: rgba(23, 155, 215,0.5);
+    display: inline-block;
+    color: white;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.project4:hover h2{
+    opacity: 1;
+    transform: scale(1);
+} 
+
+.project5{
+    background: url(./image/PSDtoHTMLProject\ 6.png);
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 300px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.project5 h2{
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 150px 0%;
+    background: rgba(23, 155, 215,0.5);
+    display: inline-block;
+    color: white;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.project5:hover h2{
+    opacity: 1;
+    transform: scale(1);
+} 
 
 .contact{
     padding: 70px 200px;
