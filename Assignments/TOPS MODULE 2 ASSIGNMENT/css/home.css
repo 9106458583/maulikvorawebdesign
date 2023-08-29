@@ -1313,7 +1313,7 @@ body{
 
 .secimg2 {
     height: 190px;
-    background: url(/image/img13.jpg);
+    background: url(../image/img13.jpg);
     filter: grayscale(100%);
     background-size: contain;
     background-repeat: no-repeat;
@@ -1385,7 +1385,7 @@ body{
 .secimg3 {
     height: 190px;
     filter: grayscale(100%);
-    background: url(/image/img14.jpg);
+    background: url(../image/img14.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -1410,7 +1410,7 @@ body{
 .secimg4 {
     height: 190px;
     filter: grayscale(100%);
-    background: url(/image/img15.jpg);
+    background: url(../image/img15.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -1526,7 +1526,7 @@ body{
 /* section 7 start  */
 
 .section7 {
-    background: url(/image/img11.jpg);
+    background: url(../image/img11.jpg);
     height: 550px;
     background-size: cover;
     background-attachment: fixed;
@@ -1703,6 +1703,7 @@ body{
 .sect7div3 {
     height: 550px;
     width: 511px;
+    margin-left: -100px;
     display: flex;
     justify-content: center;
     align-items: center;
