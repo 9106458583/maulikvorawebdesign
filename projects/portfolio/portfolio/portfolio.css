@@ -347,6 +347,7 @@
     background: url(image/Flex\ Project\ 1.png);
     display: inline-block;
     width: 100%;
+   height: 327px;
     border-radius: 10px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -445,7 +446,7 @@
 } 
 
 .project5{
-    background: url(./image/PSDtoHTMLProject\ 6.png);
+    background: url(image/PSDtoHTMLProject\ 6.png);
     display: inline-block;
     width: 100%;
     margin-top: 20px;
