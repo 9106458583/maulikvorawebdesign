@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sect1{
+    background:rgb(109, 120, 137) url(../image/Layer\ 7.png);
+  
+}
+.loginbt{
+    border-radius: 40px;
+    background: red;
+    border: none;
+    padding: 5px 25px;
+    color: white;
+    margin-left: 50px;
+
+}
+
+.loginbt1{
+    border-radius: 40px;
+    background: red;
+    border: none;
+    padding: 10px 30px; 
+    color: white;
+}
+.logoddd{
+    margin-left: 150px;
+}
+.ullisub{
+    margin: auto;
+}
+
+.slider{
+    height: 700px;
+}
+.mv{
+    background: rgb(109, 120, 137);
+}
+.slidersub{
+    font-size: 40px;
+ margin-top: -800px;
+    
+}
+.slidersub1{
+    margin-top: 50px;
+}
+.fa-search{
+    color: red;
+}
+/* section 1 end  */
+/* section2 start  */
+.sectionsub1{
+    text-align: center;
+    padding-top: 30px;
+}
+.sectsubsub2,.sectionsub212{
+    color: #D8E0E3;
+}
+.sectsubsub2{
+    border-bottom: 1px solid blue;
+    padding-bottom: 2px;
+    display: inline;
+}
+
+.sectionsub2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    
+}
+.sect2subsub2img{
+    margin-top: 70px;
+    margin-left: -50px;
+}
+.sect2subsub2img1{
+    margin-left: -80px;
+    margin-top: 30px;
+}
+.sect2subsub2img2{
+    margin-left: -90px;
+    margin-top: 40px;
+}
+/* section2 end  */
+ /* section 3 start  */
+ .section3{
+    background: url(../image/Background.png);
+ }
+ .section3sub1ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    gap: 40px;
+ }
+ .section3sub1li{
+    cursor: pointer;
+    transition: 1s;
+ }
+ .section3sub1li:hover{
+    color: red;
+ }
+
+ 
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition:  0.3s ;
+}
+.gridgallary1{
+   background-color:lightgray;
+}
+.maulikvv{
+    margin-top: -110px;
+    text-align: center;
+    z-index: 5;
+    color: white;
+}
+.maulikvv1{
+    text-align: center;
+    
+}
+.section3btn{
+margin-left: 700px;
+border: none;
+background: red;
+color: white;
+padding: 10px 40px;
+margin-top: 20px;
+margin-bottom: 40px;
+border-radius: 50px;
+
+}
+/* section3 end  */
+/* section4 start  */
+.section4sub1{
+    display: flex;
+width: 100%;
+}
+.sectsubsub332{
+    color: #D8E0E3;
+   text-align: center;
+   width: 40%;
+   margin: auto;
+   padding: 20px 0px;
+}
+.section4sub41sub1{
+    color: #D8E0E3;
+   
+}
+.section4sub41{
+   
+    width: 100%;
+    padding: 80px;
+}
+.section4sub42{
+   
+    width: 100%;
+   
+}
+
+.section4sub41sub2{
+  background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
+.computer{
+    background: url(../image/computerscreen.png);
+  
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height:400px ;
+    width:100%;
+}
+
+
+.section4sub2{
+    margin-top: 50px;
+    height: 80px;
+    display: flex;
+    background: #FFC400;
+}
+.section4sub2btn{
+  /* background-color: red; */
+    border: none;
+   color: white;
+   background:#19238F;
+   padding: 5px 40px;
+   border-radius: 40px;
+   margin: auto;
+  
+}
+
+.section4sub22{
+    color: white;
+   
+}
+.section4sub21,.section4sub22{
+    margin: auto;
+}
+/* section5 start  */
+.footer{
+ 
+    background-color: #19283f;
+    color: white;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 15%;
+  
+}
+
+
+.p1,.link{
+    margin: 15px 0;
+}
+.p1 span{
+    color: yellow;
+}
+.p1 button{
+    width: 100%;
+    padding: 10px 40px;
+    border-radius: 20px;
+    background-color: #ff3150;
+    color: white;
+    border: none;
+}
+.ft-cnt{
+    width: 25%;
+}
+.head{
+    font-size: 16px;
+}
+.icon a{
+    font-size: 16px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    display: inline-block;
+    line-height: 30px;
+    margin-right: 10px;
+    color: white;
+  
+    border-radius: 50%;
+}
+.facebook{
+    background-color: #347cd2;
+}
+.twitter{
+    background-color: #1ec4ff;
+}
+.google{
+    background-color: #ff4032;
+}
+.dribble{
+    background-color: #ff3298;
+}
+.footerendul{
+    list-style-type: none;
+  
+}
+
